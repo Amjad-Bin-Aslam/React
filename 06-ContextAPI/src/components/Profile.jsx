@@ -3,9 +3,14 @@ import { useContext, useState } from 'react'
 import UserContext from '../Context/UserContext'
 
 const Profile = () => {
+
+  const { user } = useContext(UserContext)
+
+  if(!user) return <div> Please login </div>
+
   return (
     <div>
-      Profile
+      Welcome { user.username }
     </div>
   )
 }
