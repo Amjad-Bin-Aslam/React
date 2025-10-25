@@ -38,7 +38,7 @@ function App() {
           Increment By Amount
         </button>
       </div>
-
+    
     </div>
     <div className='mt-3'>
       Counter Value: {counter}
